@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive Calculater</title>
+    <link rel="stylesheet" href="calculater.css">
+
+    <body>
+        <h1>
+            Online Calculater
+        </h1>
+        <h2>
+            ~By Tushar
+        </h2>
+    </body>
+
+</head>
+
+    <form name="form1" action="Calculater.html" class="calc" method="post">
+<input type="text" name="answer" id="display">
+ <br> 
+</br>
+
+<!-- for clear ... remove + op also -->
+<input type="button" class="btn" value="AC" onclick="form1.answer.value=' '"> 
+<!-- for backspace button html has it's inbuild function : sub string      -->
+<input type="button" class="btn" value="<" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)">
+<input type="button" class="btn" value="00" onclick="form1.answer.value+='00'">
+<input type="button" class="operatorDesign" value="/" onclick="form1.answer.value+='/'">
+
+<br> 
+</br>
+
+
+
+<input type="button" class="btn" value="7" onclick="form1.answer.value+='7'">
+<input type="button" class="btn" value="8" onclick="form1.answer.value+='8'">
+<input type="button" class="btn" value="9" onclick="form1.answer.value+='9'">
+<input type="button" class="operatorDesign" value="*" onclick="form1.answer.value+='*'">
+<br> 
+</br>
+<input type="button" class="btn" value="4" onclick="form1.answer.value+='4'">
+<input type="button" class="btn" value="5" onclick="form1.answer.value+='5'">
+<input type="button" class="btn" value="6" onclick="form1.answer.value+='6'">
+<input type="button" class="operatorDesign" value="-" onclick="form1.answer.value+='-'">
+<br> 
+</br>
+<input type="button" class="btn" value="1" onclick="form1.answer.value+='1'">
+<input type="button" class="btn" value="2" onclick="form1.answer.value+='2'">
+<input type="button" class="btn" value="3" onclick="form1.answer.value+='3'">
+<input type="button" class="operatorDesign" value="+" onclick="form1.answer.value+='+'">
+<br> 
+</br>
+<input type="button" id="zero" value="0" onclick="form1.answer.value+='0'">
+<input type="button" class="btn" value="." onclick="form1.answer.value+='.'">
+<input type="button" class="operatorDesign" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
+
+
+
+
+    </form>
+
+</html>
